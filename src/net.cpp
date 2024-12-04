@@ -361,17 +361,17 @@ bool GetMyExternalIP(CNetAddr& ipRet)
         //  <?php echo $_SERVER["REMOTE_ADDR"]; ?>
         if (nHost == 1)
         {
-            addrConnect = CService("91.198.22.70",80); // checkip.dyndns.org
+            addrConnect = CService("91.198.22.70",80); // checkip.dyn.org
 
             if (nLookup == 1)
             {
-                CService addrIP("checkip.dyndns.org", 80, true);
+                CService addrIP("checkip.dyn.org", 80, true);
                 if (addrIP.IsValid())
                     addrConnect = addrIP;
             }
 
             pszGet = "GET / HTTP/1.1\r\n"
-                     "Host: checkip.dyndns.org\r\n"
+                     "Host: checkip.dyn.org\r\n"
                      "User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)\r\n"
                      "Connection: close\r\n"
                      "\r\n";
@@ -1152,7 +1152,10 @@ void MapPort()
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strDNSSeed[][2] = {
-    {"173.212.233.242", "81.100.233.136"},
+                {"000", "000.nerdlabs.dev"},
+                {"001", "001.nerdlabs.dev"},
+                {"003", "003.nerdlabs.dev"},
+                {"devnode", "na"}
 };
 
 void ThreadDNSAddressSeed(void* parg)
