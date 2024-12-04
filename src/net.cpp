@@ -1159,6 +1159,9 @@ static const char *strDNSSeed[][2] = {
                 {"Lab-Node", "nka1.nerdlabs.dev"},
                 {"Lab-Node", "nka2.nerdlabs.dev"},
                 {"Lab-Node", "nka3.nerdlabs.dev"},
+                {"Lab-Node", "nka4.nerdlabs.dev"},
+                {"Lab-Node", "nka5.nerdlabs.dev"},
+                {"Lab-Node", "nka5.nerdlabs.dev"},
                 {"devnode", "na"}
 };
 
