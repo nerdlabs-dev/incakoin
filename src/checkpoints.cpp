@@ -143,6 +143,8 @@ static MapCheckpoints mapCheckpoints =
             ( 5700000, uint256("0x000000000ca6f8990e43dce4f7fc968c91da22a4d3b7c6736740a4fe741359c8"))
             ( 5800000, uint256("0xa1d920c13ae2b09351df844227b49a797704748d1dc764662d19a47a9800c54e"))
 
+            //checkpoints added 12/4/2024 labmin (Test)
+            ( 5897814, uint256("0xd7fe8232e4460e157f87509b7ea5ec68fb0a0fc605f3b49375162a879846f4d8"))
 
         ;
 
